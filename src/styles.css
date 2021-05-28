@@ -16,3 +16,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #FFC300;
     font-weight: bold;
 }
+
+.inputForm{
+    padding: 11px;
+	margin-top: 20px;
+	border-radius: 10px;
+    border: none;
+}

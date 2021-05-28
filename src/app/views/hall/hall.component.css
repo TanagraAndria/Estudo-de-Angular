@@ -1,0 +1,55 @@
+.mat-tab-group {
+    margin-bottom: 48px;
+  }
+
+  .menu,
+  .order {
+    width: 40%;
+    margin: 2%;
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo{
+      width: 20%;
+  }
+
+  .hall{
+    display: flex;
+    justify-content: center;
+  }
+
+  .order {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+  }
+
+  .orderForm {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+
+  .btnForm{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
