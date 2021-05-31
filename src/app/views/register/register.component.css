@@ -17,3 +17,15 @@
 .btnForm{
     margin-top: 20px;
 }
+
+.btnForm:hover{
+    background-color: #265DA6;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 60%;
+}

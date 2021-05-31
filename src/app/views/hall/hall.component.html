@@ -1,22 +1,56 @@
+<nav>
+  <p>
+    <mat-toolbar color="primary">
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="example-spacer"></span>
+      <button
+        mat-icon-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        <mat-icon routerLink="/">exit_to_app</mat-icon>
+      </button>
+    </mat-toolbar>
+  </p>
+</nav>
 <header>
   <img class="logo" src="{{ imageSrc }}" alt="{{ imageAlt }}" />
 </header>
 <div class="hall">
   <div class="menu">
     <mat-tab-group mat-align-tabs="start">
-      <mat-tab class="tabOne">
-        <P>tESTE</P>
-        <P>tESTE</P>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="material-icons">lunch_dining</mat-icon>
+        </ng-template>
+        <table>
+          <td>
+            <mat-card-subtitle>X-salada</mat-card-subtitle>
+          </td>
+          <td>
+            <button mat-mini-fab class="qtd">
+              <mat-icon class="material-icons"> control_point </mat-icon>
+            </button>
+          </td>
+        </table>
       </mat-tab>
       <mat-tab>
         <ng-template mat-tab-label>
-          <mat-icon class="example-tab-icon">thumb_up</mat-icon>
-          First
+          <mat-icon class="material-icons">bakery_dining</mat-icon>
         </ng-template>
-        Content 1
+        Content 2
       </mat-tab>
-      <mat-tab label="Third">
-        <P>tESTE</P>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="material-icons">wine_bar</mat-icon>
+        </ng-template>
+        Content 3
       </mat-tab>
     </mat-tab-group>
   </div>
@@ -32,31 +66,15 @@
               <input matInput />
             </mat-form-field>
           </td>
-          <td>
-            <mat-form-field class="table">
-              <mat-label>Mesa</mat-label>
-              <input matInput type="number" min="1" max="15" />
-            </mat-form-field>
-          </td>
         </tr>
       </table>
+      <td>
+        <mat-form-field class="table">
+          <mat-label>Mesa</mat-label>
+          <input matInput type="number" min="1" max="15" />
+        </mat-form-field>
+      </td>
 
-      <table class="example-full-width" cellspacing="0">
-        <tr>
-          <td>
-            <mat-form-field class="example-full-width">
-              <mat-label>Produto</mat-label>
-              <input matInput />
-            </mat-form-field>
-          </td>
-          <td>
-            <mat-form-field class="table">
-              <mat-label>Quantidade</mat-label>
-              <input matInput placeholder="nº" />
-            </mat-form-field>
-          </td>
-        </tr>
-      </table>
       <button mat-raised-button class="btnForm" type="submit">
         Enviar para a Cozinha
       </button>

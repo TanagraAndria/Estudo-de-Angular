@@ -8,10 +8,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { HallComponent } from './views/hall/hall.component';
+import { Error404Component } from './views/error404/error404.component';
 
 
 @NgModule({
@@ -20,6 +24,7 @@ import { HallComponent } from './views/hall/hall.component';
     LoginComponent,
     RegisterComponent,
     HallComponent,
+    Error404Component,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +34,9 @@ import { HallComponent } from './views/hall/hall.component';
     MatTabsModule,
     MatInputModule,
     MatIconModule,
+    MatTableModule,
+    MatCardModule,
+    MatToolbarModule,
     BrowserAnimationsModule
   ],
   providers: [],

@@ -1,11 +1,13 @@
 .mat-tab-group {
     margin-bottom: 48px;
   }
-
+ 
   .menu,
   .order {
-    width: 40%;
     margin: 2%;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
   }
 
   header{
@@ -23,15 +25,16 @@
   }
 
   .order {
-    background-color: cornflowerblue;
     display: flex;
     justify-content: center;
+    width: 35%;
   }
 
   .orderForm {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
   }
   
   .example-full-width {
@@ -43,13 +46,27 @@
   }
 
   .btnForm{
-    width: 30%;
+    width: 87%;
     display: flex;
     justify-content: center;
+    margin: 5%;
   }
 
   .title{
     display: flex;
     justify-content: center;
     font-weight: bold;
+    margin: 5%;
+  }
+
+  table {
+    width: 100%;
+  }
+  
+  tr.mat-footer-row {
+    font-weight: bold;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
   }

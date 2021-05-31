@@ -5,14 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './hall.component.html',
   styleUrls: ['./hall.component.css']
 })
+
 export class HallComponent implements OnInit {
 
   imageSrc = 'assets/img/logo.png'  
   imageAlt = 'logo'
-
-  constructor() { }
+ 
+  constructor() {
+    
+   }
 
   ngOnInit(): void {
   }
 
+  
 }
+
