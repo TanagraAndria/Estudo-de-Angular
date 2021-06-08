@@ -1,0 +1,28 @@
+{"title":"Products","values":[
+[1,"Cebola",".",15.0,"2021-04-01 15:11:06.314+00","2021-04-01 15:11:06.314+00"],
+[2,"Hambúrguer City Craig 180g","Pão de bacon, hambúrguer 180g, double cheddar, bacon e maionese da casa",15.0,"2021-04-01 15:23:32.998+00","2021-04-01 15:23:32.998+00"],
+[3,"Hambúrguer La Catrina 180g","Pão australiano,hambúrguer 180gr, queijo cheddar,sour cream,cebolinha,pimenta jalapeño e farofa de Doritos",15.0,"2021-04-01 15:25:08.55+00","2021-04-01 15:25:08.55+00"],
+[4,"Hambúrguer Santa Cruz 180g","Pão de brioche, hambúrguer 180gr, queijo prato, farofa de bacon, bbq caseiro,tomate e cebola roxa",15.0,"2021-04-01 15:25:45.14+00","2021-04-01 15:25:45.14+00"],
+[5,"Hambúrguer Jaws 180g","Pão australiano,hamburguer 150g, queijo cheddar,cebola caramelizada e maionese artesanal",15.0,"2021-04-01 15:26:52.971+00","2021-04-01 15:26:52.971+00"],
+[6,"Hambúrguer Ogrinho KID","Pão, hamburguer 150 gr, queijo",15.0,"2021-04-01 15:27:42.954+00","2021-04-01 15:27:42.954+00"],[7,"Hambúrguer K2","Pão, hambúrguer 150gr, cebola crispy, creme de gorgonzola, bbq e tomate",15.0,"2021-04-01 15:28:32.778+00","2021-04-01 15:28:32.778+00"],
+[8,"Bacon","Acomoanhamento",5.0,"2021-04-01 15:29:13.915+00","2021-04-01 15:29:13.915+00"],
+[9,"Molho BBQ","Acomoanhamento",5.0,"2021-04-01 15:29:29.685+00","2021-04-01 15:29:29.685+00"],
+[10,"Molho Gorgonzola","Acomoanhamento",5.0,"2021-04-01 15:29:41.526+00","2021-04-01 15:29:41.526+00"],
+[11,"Maionese artesanal","Acomoanhamento",5.0,"2021-04-01 15:30:00.101+00","2021-04-01 15:30:00.101+00"],
+[12,"Batata","Porção",16.0,"2021-04-01 15:30:52.024+00","2021-04-01 15:30:52.024+00"],
+[13,"Isaca de Frango","Porção",16.0,"2021-04-01 15:31:38.309+00","2021-04-01 15:31:38.309+00"],
+[14,"Cebola","Porção",16.0,"2021-04-01 15:31:50.346+00","2021-04-01 15:31:50.346+00"]
+,[15,"Polenta","Porção",16.0,"2021-04-01 15:32:00.496+00","2021-04-01 15:32:00.496+00"],
+[16,"Coca cola zero","Lata",4.0,"2021-04-01 15:32:35.768+00","2021-04-01 15:32:35.768+00"],
+[17,"Coca cola ","Lata",4.0,"2021-04-01 15:32:41.876+00","2021-04-01 15:32:41.876+00"],
+[18,"Fanta","Lata",4.0,"2021-04-01 15:32:51.29+00","2021-04-01 15:32:51.29+00"]
+,[19,"Laranja","Suco",4.0,"2021-04-01 15:33:40.894+00","2021-04-01 15:33:40.894+00"],
+[20,"Limão","Suco",4.0,"2021-04-01 15:33:48.963+00","2021-04-01 15:33:48.963+00"],
+[21,"Maracujá","Suco",4.0,"2021-04-01 15:33:59.184+00","2021-04-01 15:33:59.184+00"],
+[22,"Água","Garrafa",4.0,"2021-04-01 15:34:24.849+00","2021-04-01 15:34:24.849+00"],
+[23,"Coca cola","Garrafa 2l",10.0,"2021-04-01 15:34:47.896+00","2021-04-01 15:34:47.896+00"]],
+"fields":["id","name","description","price","createdAt","updatedAt"],
+"types":[23,1043,25,1700,1184,1184],
+"type_names":["integer","text","text","float","timestamp with time zone","timestamp with time zone"],
+"started_at":"2021-06-08 13:49:46 +0000",
+"finished_at":"2021-06-08 13:49:46 +0000","checksum":"af8e3d84c0167cbb08beb7d4af4460a5"}

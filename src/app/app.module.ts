@@ -11,11 +11,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatRadioModule} from '@angular/material/radio';
+import { HttpClientModule } from '@angular/common/http';
 
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { HallComponent } from './views/hall/hall.component';
 import { Error404Component } from './views/error404/error404.component';
+
 
 
 @NgModule({
@@ -27,6 +30,7 @@ import { Error404Component } from './views/error404/error404.component';
     Error404Component,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     MatSliderModule,
@@ -37,6 +41,7 @@ import { Error404Component } from './views/error404/error404.component';
     MatTableModule,
     MatCardModule,
     MatToolbarModule,
+    MatRadioModule, 
     BrowserAnimationsModule
   ],
   providers: [],

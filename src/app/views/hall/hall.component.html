@@ -28,7 +28,11 @@
       <mat-tab>
         <ng-template mat-tab-label>
           <mat-icon class="material-icons">lunch_dining</mat-icon>
+          <li *ngFor="let product of Products">
+            {{ product.name }} - {{ product.price }}
+          </li>
         </ng-template>
+
         <table>
           <td>
             <mat-card-subtitle>X-salada</mat-card-subtitle>

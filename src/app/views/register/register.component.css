@@ -29,3 +29,8 @@ header{
 .logo{
     width: 60%;
 }
+
+.btnRadio{
+    display: flex;
+    justify-content: space-around;
+}
