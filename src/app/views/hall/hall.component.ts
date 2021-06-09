@@ -13,6 +13,8 @@ export class HallComponent implements OnInit {
   imageSrc = 'assets/img/logo.png'; 
   imageAlt = 'logo';
   Products: any;
+  Drinks:any;
+  Follow:any;
   
   constructor(
     public productService: productsService
@@ -20,16 +22,34 @@ export class HallComponent implements OnInit {
 
   ngOnInit() {
     this.getProducts();
+    this.getDrinks();
+    this.getFollow ();
   }
 
   getProducts (){
     this.productService.getAllProducts().subscribe((products:any) => {
-      console.log('sucesso: ' , products);
       this.Products= products;
     }, error =>{
       console.log(error)
     });
   }
-  
+
+  getDrinks () {
+    this.productService.getAllDrinks().subscribe((drinks:any) =>{
+      this.Drinks = drinks;
+    }, error =>{
+      console.log(error)
+    });
+  }
+
+  getFollow () {
+    this.productService.getAllFollow().subscribe((follow:any) =>{
+      this.Follow = follow;
+    }, error =>{
+      console.log(error)
+    });
+  }
+
+
 }
 

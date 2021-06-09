@@ -12,12 +12,53 @@ export class productsService {
 
   apiUrl ='https://bq-acka-burger.herokuapp.com/api/products';
 
-  products = [{"id":1,"name":"Café americano","type":null,"price":5,"flavor":null,"complement":null,"image":"https://i.ibb.co/NK0KGdK/coffee.png","menuType":"breakfast","menuSubType":"breakfast","createdAt":"2021-03-31T19:32:12.000Z","updatedAt":"2021-03-31T19:32:12.000Z"},{"id":2,"name":"Café com leite","type":null,"price":7,"flavor":null,"complement":null,"image":"https://i.ibb.co/MkjV9RH/latte.png","menuType":"breakfast","menuSubType":"breakfast","createdAt":"2021-03-31T19:34:48.000Z","updatedAt":"2021-03-31T19:34:48.000Z"},{"id":3,"name":"Misto quente","type":null,"price":10,"flavor":null,"complement":null,"image":"https://i.ibb.co/WHRvQMm/grilled-ham-cheese.png","menuType":"breakfast","menuSubType":"breakfast","createdAt":"2021-03-31T19:37:23.000Z","updatedAt":"2021-03-31T19:37:23.000Z"},{"id":4,"name":"Suco de fruta natural","type":null,"price":7,"flavor":null,"complement":null,"image":"https://i.ibb.co/88sMChv/juice.png","menuType":"breakfast","menuSubType":"breakfast","createdAt":"2021-03-31T19:39:59.000Z","updatedAt":"2021-03-31T19:39:59.000Z"},{"id":5,"name":"Hambúrguer","type":"Simples","price":15,"flavor":"carne","complement":null,"image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T19:42:34.000Z","updatedAt":"2021-03-31T19:42:34.000Z"},{"id":6,"name":"Hambúrguer","type":"Simples","price":15,"flavor":"frango","complement":null,"image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T19:45:10.000Z","updatedAt":"2021-03-31T19:45:10.000Z"},{"id":7,"name":"Hambúrguer","type":"Simples","price":15,"flavor":"vegetariano","complement":null,"image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T19:47:45.000Z","updatedAt":"2021-03-31T19:47:45.000Z"},{"id":8,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"carne","complement":"queijo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T19:50:21.000Z","updatedAt":"2021-03-31T19:50:21.000Z"},{"id":9,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"frango","complement":"queijo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T19:52:56.000Z","updatedAt":"2021-03-31T19:52:56.000Z"},{"id":10,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"vegetariano","complement":"queijo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T19:55:32.000Z","updatedAt":"2021-03-31T19:55:32.000Z"},{"id":11,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"carne","complement":"ovo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T19:58:07.000Z","updatedAt":"2021-03-31T19:58:07.000Z"},{"id":12,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"frango","complement":"ovo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T20:00:43.000Z","updatedAt":"2021-03-31T20:00:43.000Z"},{"id":13,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"vegetariano","complement":"ovo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T20:03:18.000Z","updatedAt":"2021-03-31T20:03:18.000Z"},{"id":14,"name":"Hambúrguer","type":"Duplo","price":20,"flavor":"carne","complement":null,"image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T20:05:54.000Z","updatedAt":"2021-03-31T20:05:54.000Z"},{"id":15,"name":"Hambúrguer","type":"Duplo","price":20,"flavor":"frango","complement":null,"image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T20:08:29.000Z","updatedAt":"2021-03-31T20:08:29.000Z"},{"id":16,"name":"Hambúrguer","type":"Duplo","price":20,"flavor":"vegetariano","complement":null,"image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T20:11:05.000Z","updatedAt":"2021-03-31T20:11:05.000Z"},{"id":17,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"carne","complement":"ovo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T20:13:40.000Z","updatedAt":"2021-03-31T20:13:40.000Z"},{"id":18,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"frango","complement":"ovo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T20:16:16.000Z","updatedAt":"2021-03-31T20:16:16.000Z"},{"id":19,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"vegetariano","complement":"ovo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T20:18:51.000Z","updatedAt":"2021-03-31T20:18:51.000Z"},{"id":20,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"carne","complement":"queijo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T20:21:27.000Z","updatedAt":"2021-03-31T20:21:27.000Z"},{"id":21,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"frango","complement":"queijo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T20:24:02.000Z","updatedAt":"2021-03-31T20:24:02.000Z"},{"id":22,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"vegetariano","complement":"queijo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-03-31T20:26:38.000Z","updatedAt":"2021-03-31T20:26:38.000Z"},{"id":23,"name":"Batata frita","type":null,"price":10,"flavor":null,"complement":null,"image":"https://i.ibb.co/cyQy9w3/fries.png","menuType":"all-day","menuSubType":"side","createdAt":"2021-03-31T20:29:13.000Z","updatedAt":"2021-03-31T20:29:13.000Z"},{"id":24,"name":"Anéis de cebola","type":null,"price":10,"flavor":null,"complement":null,"image":"https://i.ibb.co/JsKQHqN/onion-rings.png","menuType":"all-day","menuSubType":"side","createdAt":"2021-03-31T20:31:49.000Z","updatedAt":"2021-03-31T20:31:49.000Z"},{"id":25,"name":"Água 500ml","type":null,"price":7,"flavor":null,"complement":null,"image":"https://i.ibb.co/56dFP17/water.png","menuType":"all-day","menuSubType":"drinks","createdAt":"2021-03-31T20:39:36.000Z","updatedAt":"2021-03-31T20:39:36.000Z"},{"id":26,"name":"Água 250ml","type":null,"price":5,"flavor":null,"complement":null,"image":"https://i.ibb.co/56dFP17/water.png","menuType":"all-day","menuSubType":"drinks","createdAt":"2021-03-31T20:34:24.000Z","updatedAt":"2021-03-31T20:34:24.000Z"},{"id":27,"name":"Refrigerante 500ml","type":null,"price":7,"flavor":null,"complement":null,"image":"https://i.ibb.co/sPxdh3K/soda.png","menuType":"all-day","menuSubType":"drinks","createdAt":"2021-03-31T20:42:11.000Z","updatedAt":"2021-03-31T20:42:11.000Z"},{"id":28,"name":"Refrigerante 250ml","type":null,"price":5,"flavor":null,"complement":null,"image":"https://i.ibb.co/sPxdh3K/soda.png","menuType":"all-day","menuSubType":"drinks","createdAt":"2021-03-31T20:37:00.000Z","updatedAt":"2021-03-31T20:37:00.000Z"},{"id":29,"name":"Hambúrger","type":"Triplo","price":25,"flavor":"carne","complement":null,"image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-04-01T19:01:28.315Z","updatedAt":"2021-04-01T19:01:28.315Z"},{"id":30,"name":"Hambúrger","type":"Triplo","price":30,"flavor":"frango","complement":null,"image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer","createdAt":"2021-04-01T19:34:17.373Z","updatedAt":"2021-04-01T20:31:19.747Z"}];
+  
+  
+  products = [
+    {"id":1,"name":"Café americano","type":null,"price":5,"flavor":null,"complement":null,"image":"https://i.ibb.co/NK0KGdK/coffee.png","menuType":"breakfast","menuSubType":"breakfast"},
+    {"id":2,"name":"Café com leite","type":null,"price":7,"flavor":null,"complement":null,"image":"https://i.ibb.co/MkjV9RH/latte.png","menuType":"breakfast","menuSubType":"breakfast"},
+    {"id":3,"name":"Misto quente","type":null,"price":10,"flavor":null,"complement":null,"image":"https://i.ibb.co/WHRvQMm/grilled-ham-cheese.png","menuType":"breakfast","menuSubType":"breakfast"},
+
+    {"id":5,"name":"Hambúrguer","type":"Simples","price":15,"flavor":"carne","complement":null,"image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":6,"name":"Hambúrguer","type":"Simples","price":15,"flavor":"frango","complement":null,"image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":7,"name":"Hambúrguer","type":"Simples","price":15,"flavor":"vegetariano","complement":null,"image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":8,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"carne","complement":"queijo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":9,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"frango","complement":"queijo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":10,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"vegetariano","complement":"queijo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":11,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"carne","complement":"ovo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":12,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"frango","complement":"ovo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":13,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"vegetariano","complement":"ovo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":14,"name":"Hambúrguer","type":"Duplo","price":20,"flavor":"carne","complement":null,"image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":15,"name":"Hambúrguer","type":"Duplo","price":20,"flavor":"frango","complement":null,"image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":16,"name":"Hambúrguer","type":"Duplo","price":20,"flavor":"vegetariano","complement":null,"image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":17,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"carne","complement":"ovo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":18,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"frango","complement":"ovo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":19,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"vegetariano","complement":"ovo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":20,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"carne","complement":"queijo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":21,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"frango","complement":"queijo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
+    {"id":22,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"vegetariano","complement":"queijo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
+  ];
+  follow=[
+    {"id":23,"name":"Batata frita","type":null,"price":10,"flavor":null,"complement":null,"image":"https://i.ibb.co/cyQy9w3/fries.png","menuType":"all-day","menuSubType":"side"},
+    {"id":24,"name":"Anéis de cebola","type":null,"price":10,"flavor":null,"complement":null,"image":"https://i.ibb.co/JsKQHqN/onion-rings.png","menuType":"all-day","menuSubType":"side"},
+  ];
+
+  drinks =[
+    {"id":25,"name":"Água 500ml","type":null,"price":7,"flavor":null,"complement":null,"image":"https://i.ibb.co/56dFP17/water.png","menuType":"all-day","menuSubType":"drinks"},
+    {"id":26,"name":"Água 250ml","type":null,"price":5,"flavor":null,"complement":null,"image":"https://i.ibb.co/56dFP17/water.png","menuType":"all-day","menuSubType":"drinks"},
+    {"id":27,"name":"Refrigerante 500ml","type":null,"price":7,"flavor":null,"complement":null,"image":"https://i.ibb.co/sPxdh3K/soda.png","menuType":"all-day","menuSubType":"drinks"},
+    {"id":28,"name":"Refrigerante 250ml","type":null,"price":5,"flavor":null,"complement":null,"image":"https://i.ibb.co/sPxdh3K/soda.png","menuType":"all-day","menuSubType":"drinks"},
+    {"id":4,"name":"Suco de fruta natural","type":null,"price":7,"flavor":null,"complement":null,"image":"https://i.ibb.co/88sMChv/juice.png","menuType":"breakfast","menuSubType":"breakfast"},
+  ];
   
   constructor( private httpClient: HttpClient) { }
 
+
   getAllProducts(): Observable<any> {
-    return  from ( Promise.resolve(this.products) );
+    
+    return  from ( Promise.resolve(this. products) );
+
+  
       // return from(
       //   fetch(
       //     this.apiUrl, 
@@ -33,5 +74,16 @@ export class productsService {
     
     //return this.httpClient.get<any>(this.apiUrl,{headers: headers});
   }
+
+  getAllDrinks(): Observable<any> {
+    
+    return  from ( Promise.resolve(this.drinks) );
+  }
+
+  getAllFollow(): Observable<any> {
+    
+    return  from ( Promise.resolve(this.follow) );
+  }
+
 }
 
