@@ -29,36 +29,28 @@
         <ng-template mat-tab-label>
           <mat-icon class="material-icons">lunch_dining</mat-icon>
         </ng-template>
-
-        <table>
-          <td>
-            <mat-card-subtitle *ngFor="let allDay of Products" class="card">
-              {{ allDay.name }} R${{ allDay.price }}
-            </mat-card-subtitle>
-          </td>
-          <td>
-            <button mat-mini-fab class="qtd">
-              <mat-icon class="material-icons"> control_point </mat-icon>
-            </button>
-          </td>
-        </table>
+        <button *ngFor="let products of Products" class="card">
+          {{ products.name }} {{ products.type }} {{ products.flavor }} R${{
+            products.price
+          }}
+        </button>
       </mat-tab>
       <mat-tab>
         <ng-template mat-tab-label>
           <mat-icon class="material-icons">bakery_dining</mat-icon>
         </ng-template>
-        <mat-card-subtitle *ngFor="let follow of Follow" class="card">
+        <button *ngFor="let follow of Follow" class="card">
           {{ follow.name }} R$ {{ follow.price }}
-        </mat-card-subtitle>
+        </button>
       </mat-tab>
 
       <mat-tab>
         <ng-template mat-tab-label>
           <mat-icon class="material-icons">wine_bar</mat-icon>
         </ng-template>
-        <mat-card-subtitle *ngFor="let drink of Drinks" class="card">
+        <button *ngFor="let drink of Drinks" class="card">
           {{ drink.name }} R$ {{ drink.price }}
-        </mat-card-subtitle>
+        </button>
       </mat-tab>
     </mat-tab-group>
   </div>

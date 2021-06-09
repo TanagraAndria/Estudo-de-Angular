@@ -74,4 +74,9 @@
   .card{
     display: flex;
     flex-direction: column;
+    padding: 2%;
+  }
+
+  .card:hover{
+    background-color: #FFC300;;
   }

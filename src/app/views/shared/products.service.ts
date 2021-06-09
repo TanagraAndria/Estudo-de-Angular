@@ -15,28 +15,13 @@ export class productsService {
   
   
   products = [
-    {"id":1,"name":"Café americano","type":null,"price":5,"flavor":null,"complement":null,"image":"https://i.ibb.co/NK0KGdK/coffee.png","menuType":"breakfast","menuSubType":"breakfast"},
-    {"id":2,"name":"Café com leite","type":null,"price":7,"flavor":null,"complement":null,"image":"https://i.ibb.co/MkjV9RH/latte.png","menuType":"breakfast","menuSubType":"breakfast"},
-    {"id":3,"name":"Misto quente","type":null,"price":10,"flavor":null,"complement":null,"image":"https://i.ibb.co/WHRvQMm/grilled-ham-cheese.png","menuType":"breakfast","menuSubType":"breakfast"},
-
     {"id":5,"name":"Hambúrguer","type":"Simples","price":15,"flavor":"carne","complement":null,"image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
     {"id":6,"name":"Hambúrguer","type":"Simples","price":15,"flavor":"frango","complement":null,"image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
     {"id":7,"name":"Hambúrguer","type":"Simples","price":15,"flavor":"vegetariano","complement":null,"image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
     {"id":8,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"carne","complement":"queijo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
-    {"id":9,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"frango","complement":"queijo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
-    {"id":10,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"vegetariano","complement":"queijo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
-    {"id":11,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"carne","complement":"ovo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
-    {"id":12,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"frango","complement":"ovo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
-    {"id":13,"name":"Hambúrguer","type":"Simples","price":17,"flavor":"vegetariano","complement":"ovo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
     {"id":14,"name":"Hambúrguer","type":"Duplo","price":20,"flavor":"carne","complement":null,"image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
     {"id":15,"name":"Hambúrguer","type":"Duplo","price":20,"flavor":"frango","complement":null,"image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
     {"id":16,"name":"Hambúrguer","type":"Duplo","price":20,"flavor":"vegetariano","complement":null,"image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
-    {"id":17,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"carne","complement":"ovo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
-    {"id":18,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"frango","complement":"ovo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
-    {"id":19,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"vegetariano","complement":"ovo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
-    {"id":20,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"carne","complement":"queijo","image":"https://i.ibb.co/X72RLZ0/burger-meat.png","menuType":"all-day","menuSubType":"hamburguer"},
-    {"id":21,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"frango","complement":"queijo","image":"https://i.ibb.co/HtgRP5b/burger-chicken.png","menuType":"all-day","menuSubType":"hamburguer"},
-    {"id":22,"name":"Hambúrguer","type":"Duplo","price":22,"flavor":"vegetariano","complement":"queijo","image":"https://i.ibb.co/Ybg2FzK/burger-veggie.png","menuType":"all-day","menuSubType":"hamburguer"},
   ];
   follow=[
     {"id":23,"name":"Batata frita","type":null,"price":10,"flavor":null,"complement":null,"image":"https://i.ibb.co/cyQy9w3/fries.png","menuType":"all-day","menuSubType":"side"},
