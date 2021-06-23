@@ -1,0 +1,38 @@
+<div class="menu">
+  <mat-tab-group mat-align-tabs="start">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="material-icons">lunch_dining</mat-icon>
+      </ng-template>
+      <div class="img">
+        <img src="{{ item.image }}" class="img" />
+      </div>
+      <button
+        *ngFor="let products of Products"
+        class="card"
+        (click)="teste(item)"
+      >
+        {{ products.name }} {{ products.type }} {{ products.flavor }} R${{
+          products.price
+        }}
+      </button>
+    </mat-tab>
+    <!-- <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="material-icons">bakery_dining</mat-icon>
+      </ng-template>
+      <button *ngFor="let follow of Follow" class="card">
+        {{ follow.name }} R$ {{ follow.price }}
+      </button>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="material-icons">wine_bar</mat-icon>
+      </ng-template>
+      <button *ngFor="let drink of Drinks" class="card">
+        {{ drink.name }} R$ {{ drink.price }}
+      </button>
+    </mat-tab> -->
+  </mat-tab-group>
+</div>

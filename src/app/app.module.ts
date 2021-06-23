@@ -18,6 +18,8 @@ import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { HallComponent } from './views/hall/hall.component';
 import { Error404Component } from './views/error404/error404.component';
+import { ProductsComponent } from './views/hall/components/products/products.component';
+import { OrderComponent } from './views/hall/components/order/order.component';
 
 
 
@@ -26,8 +28,10 @@ import { Error404Component } from './views/error404/error404.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
+    OrderComponent, 
     HallComponent,
     Error404Component,
+    ProductsComponent,
   ],
   imports: [
     HttpClientModule,

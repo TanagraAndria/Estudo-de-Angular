@@ -22,62 +22,7 @@
 <header>
   <img class="logo" src="{{ imageSrc }}" alt="{{ imageAlt }}" />
 </header>
-<div class="hall">
-  <div class="menu">
-    <mat-tab-group mat-align-tabs="start">
-      <mat-tab>
-        <ng-template mat-tab-label>
-          <mat-icon class="material-icons">lunch_dining</mat-icon>
-        </ng-template>
-        <button *ngFor="let products of Products" class="card">
-          {{ products.name }} {{ products.type }} {{ products.flavor }} R${{
-            products.price
-          }}
-        </button>
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          <mat-icon class="material-icons">bakery_dining</mat-icon>
-        </ng-template>
-        <button *ngFor="let follow of Follow" class="card">
-          {{ follow.name }} R$ {{ follow.price }}
-        </button>
-      </mat-tab>
+  <mat-label label="Api + Observable">
 
-      <mat-tab>
-        <ng-template mat-tab-label>
-          <mat-icon class="material-icons">wine_bar</mat-icon>
-        </ng-template>
-        <button *ngFor="let drink of Drinks" class="card">
-          {{ drink.name }} R$ {{ drink.price }}
-        </button>
-      </mat-tab>
-    </mat-tab-group>
-  </div>
-
-  <div class="order">
-    <form class="orderForm">
-      <mat-label class="title">PEDIDOS</mat-label>
-      <table class="example-full-width" cellspacing="0">
-        <tr>
-          <td>
-            <mat-form-field class="example-full-width">
-              <mat-label>Nome</mat-label>
-              <input matInput />
-            </mat-form-field>
-          </td>
-        </tr>
-      </table>
-      <td>
-        <mat-form-field class="table">
-          <mat-label>Mesa</mat-label>
-          <input matInput type="number" min="1" max="15" />
-        </mat-form-field>
-      </td>
-
-      <button mat-raised-button class="btnForm" type="submit">
-        Enviar para a Cozinha
-      </button>
-    </form>
-  </div>
+  </mat-tab-group>
 </div>
