@@ -7,4 +7,5 @@ export interface Products {
         menuType: string;
         menuSubType: string;
         complement: string;
+        flavor: string;
     }

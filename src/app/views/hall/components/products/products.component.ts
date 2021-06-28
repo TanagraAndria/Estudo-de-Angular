@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import {ServiceApiService} from '../../../../service/serviceApi.service';
-import {Order} from '../order/order';
+
 import {Products} from './product';
 
 @Component({
@@ -9,24 +10,48 @@ import {Products} from './product';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  Itens: Array<Products> =[];
-  listItens: any =[];
+  Products: Array<Products> =[];
+  Breakfast: Array <Products> =[];
+  Burger: Array <Products> =[];
+  Drinks: Array <Products> =[];
+  Side: Array <Products> =[];
+  listProducts: any =[];
 
-  constructor(private prductApi: ServiceApiService ) { }
+  constructor(private productApi: ServiceApiService ) { }
 
   ngOnInit(): void {
-    this.prductApi.getProduct().subscribe((data) => {
-      this.Itens = data;
+    this.productApi.getProducts().subscribe((data) => {
+      data.forEach(item =>{
+        if ( item.menuSubType =='breakfast' ){
+          this.Breakfast.push(item);
+        }
+         if ( item.menuSubType =='hamburguer' ){
+           this.Burger.push(item);
+         }
+        if ( item.menuSubType =='drinks' ){
+          this.Drinks.push(item);
+        }
+        if ( item.menuSubType =='side' ){
+          this.Side.push(item);
+        }
+      });
+
+      this.Products = data;
     })
   }
 
-  teste(item : any){
-    let updated = this.prductApi.getOrder();
+  getProducts(): Observable<Products []>{
+    const products =  of (this.Products);
+    return products;
+  };
+
+  teste(Products : any){
+    let updated = this.productApi.getOrder();
     if(!updated.itensOrder){
       updated.itensOrder= new Array<Products>();
     }
-    updated.itensOrder.push(item);
-    this.prductApi.setOrder(updated);
+    updated.itensOrder.push(Products);
+    this.productApi.setOrder(updated);
   }
 
 }

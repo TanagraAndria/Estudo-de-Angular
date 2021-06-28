@@ -14,8 +14,8 @@ export class OrderComponent implements OnInit {
   order: Order ={} as Order;
   valorTotal: number = 0;
 
-  constructor( private produtoApi: ServiceApiService) {
-    this.produtoApi.order.subscribe((data) => {
+  constructor( private productApi: ServiceApiService) {
+    this.productApi.order.subscribe((data) => {
       this.order = data;
     })
    }

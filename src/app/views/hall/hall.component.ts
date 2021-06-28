@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
-
 @Component({
   selector: 'app-hall',
   templateUrl: './hall.component.html',
@@ -12,22 +10,22 @@ export class HallComponent implements OnInit {
 
   imageSrc = 'assets/img/logo.png'; 
   imageAlt = 'logo';
-  // Products: any;
+ 
   // Drinks:any;
   // Follow:any;
   
   constructor(
-    
+   
   ) { }
 
   ngOnInit() {
-    // this.getProducts();
+    //this.getProducts();
     // this.getDrinks();
     // this.getFollow ();
   }
 
   // getProducts (){
-  //   this.productService.getAllProducts().subscribe((products:any) => {
+  //   this.ServiceApiService.getAllProducts().subscribe((products:any) => {
   //     this.Products= products;
   //   }, error =>{
   //     console.log(error)
