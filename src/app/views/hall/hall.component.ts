@@ -11,43 +11,13 @@ export class HallComponent implements OnInit {
   imageSrc = 'assets/img/logo.png'; 
   imageAlt = 'logo';
  
-  // Drinks:any;
-  // Follow:any;
   
-  constructor(
-   
-  ) { }
-
+  constructor() { }
+  
   ngOnInit() {
-    //this.getProducts();
-    // this.getDrinks();
-    // this.getFollow ();
+   
   }
-
-  // getProducts (){
-  //   this.ServiceApiService.getAllProducts().subscribe((products:any) => {
-  //     this.Products= products;
-  //   }, error =>{
-  //     console.log(error)
-  //   });
-  // }
-
-  // getDrinks () {
-  //   this.productService.getAllDrinks().subscribe((drinks:any) =>{
-  //     this.Drinks = drinks;
-  //   }, error =>{
-  //     console.log(error)
-  //   });
-  // }
-
-  // getFollow () {
-  //   this.productService.getAllFollow().subscribe((follow:any) =>{
-  //     this.Follow = follow;
-  //   }, error =>{
-  //     console.log(error)
-  //   });
-  // }
-
-
 }
+  
+
 

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import {LoadingService } from './loader/loader.service';
-import {delay} from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-root',
@@ -9,21 +8,13 @@ import {delay} from 'rxjs/operators';
 })
 export class AppComponent {
   title = 'my-app';
-  loading: boolean= false;
+  
 
-  constructor(private _loading: LoadingService) {}
+  constructor() {}
 
-  ngOnInit(){
-    this.listenToLoading();
-  }
+  ngOnInit(){ }
 
-  listenToLoading(): void{
-    this._loading.loadingSub
-    .pipe(delay(0))
-    .subscribe((loading) =>{
-      this.loading = loading;
-    });
-  }
+ 
   
 }
 

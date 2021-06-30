@@ -15,6 +15,7 @@ export class ProductsComponent implements OnInit {
   Drinks: Array <Products> =[];
   Side: Array <Products> =[];
   listProducts: any =[];
+  isLoading: boolean = true;
 
   constructor(private productApi: ServiceApiService ) { }
 
@@ -36,6 +37,7 @@ export class ProductsComponent implements OnInit {
       });
 
       this.Products = data;
+      this.isLoading= false;
     })
   }
 

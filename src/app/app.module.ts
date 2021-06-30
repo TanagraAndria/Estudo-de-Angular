@@ -21,7 +21,8 @@ import { HallComponent } from './views/hall/hall.component';
 import { Error404Component } from './views/error404/error404.component';
 import { ProductsComponent } from './views/hall/components/products/products.component';
 import { OrderComponent } from './views/hall/components/order/order.component';
-import { LoaderComponent } from './loader/loader/loader.component';
+
+
 
 
 
@@ -34,7 +35,6 @@ import { LoaderComponent } from './loader/loader/loader.component';
     HallComponent,
     Error404Component,
     ProductsComponent,
-    LoaderComponent,
   ],
   imports: [
     HttpClientModule,

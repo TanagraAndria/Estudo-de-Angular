@@ -1,18 +1,14 @@
 <nav>
   <p>
     <mat-toolbar color="primary">
-      <button
-        mat-icon-button
-        class="example-icon"
-        aria-label="Example icon-button with menu icon"
-      >
+      <button mat-icon-button class="example-icon" aria-label="menu icon">
         <mat-icon>menu</mat-icon>
       </button>
       <span class="example-spacer"></span>
       <button
         mat-icon-button
         class="example-icon favorite-icon"
-        aria-label="Example icon-button with heart icon"
+        aria-label="Sair do App"
       >
         <mat-icon routerLink="/">exit_to_app</mat-icon>
       </button>
@@ -21,7 +17,6 @@
 </nav>
 <header>
   <img class="logo" src="{{ imageSrc }}" alt="{{ imageAlt }}" />
-  <mat-spinner class="spinner"></mat-spinner>
 </header>
 <mat-label label="Api + Observable">
   <div class="apps">

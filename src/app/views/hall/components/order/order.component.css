@@ -4,8 +4,9 @@
     background-color: white;
     display: flex;
     justify-content: center;
-    width: 250%;
-    margin-left: 80%;
+    width: 30vw;
+    height: 60vh;
+    overflow: auto;
 }
 
 .orderForm {
