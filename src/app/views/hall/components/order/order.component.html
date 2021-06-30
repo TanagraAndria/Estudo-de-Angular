@@ -10,14 +10,23 @@
           </mat-form-field>
         </td>
       </tr>
+      <tr>
+        <td>
+          <mat-form-field class="table">
+            <mat-label>Mesa</mat-label>
+            <input matInput type="number" min="1" max="15" />
+          </mat-form-field>
+        </td>
+      </tr>
     </table>
-    <td>
-      <mat-form-field class="table">
-        <mat-label>Mesa</mat-label>
-        <input matInput type="number" min="1" max="15" />
-      </mat-form-field>
-    </td>
-    <td></td>
+
+    <mat-list class="orderProduct" *ngIf="order && order.itensOrder">
+      <mat-list-item *ngFor="let item of order.itensOrder">
+        {{ item.name }}
+        {{ item.flavor }} R${{ item.price }}
+      </mat-list-item>
+      <mat-list-item> Valor total: R${{ getValor() }} </mat-list-item>
+    </mat-list>
 
     <button mat-raised-button class="btnForm" type="submit">
       Enviar para a Cozinha

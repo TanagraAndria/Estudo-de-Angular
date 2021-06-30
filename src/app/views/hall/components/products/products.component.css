@@ -1,9 +1,29 @@
 .menu{
     border-radius: 10px;
     background-color: white;
-    width: 100%;
+    width: 90%;
+    margin-left: 20%;
 }
 
 .img{
     width: 10%;
+}
+
+.card{
+    width: 50%;
+}
+
+.card:hover{
+    background-color: #FFC300;
+}
+
+.productMenu{
+    display: flex;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+.mat-tab-label{
+min-width: 132px;
 }

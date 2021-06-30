@@ -13,13 +13,15 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatRadioModule} from '@angular/material/radio';
 import { HttpClientModule } from '@angular/common/http';
-
+import {MatListModule} from '@angular/material/list';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { HallComponent } from './views/hall/hall.component';
 import { Error404Component } from './views/error404/error404.component';
 import { ProductsComponent } from './views/hall/components/products/products.component';
 import { OrderComponent } from './views/hall/components/order/order.component';
+import { LoaderComponent } from './loader/loader/loader.component';
 
 
 
@@ -32,6 +34,7 @@ import { OrderComponent } from './views/hall/components/order/order.component';
     HallComponent,
     Error404Component,
     ProductsComponent,
+    LoaderComponent,
   ],
   imports: [
     HttpClientModule,
@@ -45,7 +48,9 @@ import { OrderComponent } from './views/hall/components/order/order.component';
     MatTableModule,
     MatCardModule,
     MatToolbarModule,
-    MatRadioModule, 
+    MatRadioModule,
+    MatListModule, 
+    MatProgressSpinnerModule,
     BrowserAnimationsModule
   ],
   providers: [],

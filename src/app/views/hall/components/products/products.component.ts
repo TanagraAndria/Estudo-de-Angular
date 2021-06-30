@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import {ServiceApiService} from '../../../../service/serviceApi.service';
-
 import {Products} from './product';
 
 @Component({
@@ -52,6 +51,9 @@ export class ProductsComponent implements OnInit {
     }
     updated.itensOrder.push(Products);
     this.productApi.setOrder(updated);
+    console.log("teste")
+    console.log(this.productApi.getOrder())
   }
+  
 
 }

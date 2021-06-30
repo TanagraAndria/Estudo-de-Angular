@@ -5,11 +5,10 @@
         <ng-template mat-tab-label>
           <mat-icon class="material-icons">lunch_dining</mat-icon>
         </ng-template>
-        <div *ngFor="let itemBurger of Burger">
-          <img src="{{ itemBurger.image }}" class="img" />
-          <button class="card">
-            {{ itemBurger.name }} {{ itemBurger.type }}
-            {{ itemBurger.flavor }} R${{ itemBurger.price }}
+        <div *ngFor="let item of Burger" class="productMenu">
+          <img src="{{ item.image }}" class="img" />
+          <button class="card" (click)="teste(item)">
+            {{ item.name }} {{ item.type }} {{ item.flavor }} R${{ item.price }}
           </button>
         </div>
       </mat-tab>
@@ -17,15 +16,15 @@
         <ng-template mat-tab-label>
           <mat-icon class="material-icons">bakery_dining</mat-icon>
         </ng-template>
-        <div *ngFor="let itemBreakfast of Breakfast">
+        <div *ngFor="let itemBreakfast of Breakfast" class="productMenu">
           <img src="{{ itemBreakfast.image }}" class="img" />
-          <button class="card">
+          <button class="card" (click)="teste(itemBreakfast)">
             {{ itemBreakfast.name }} R$ {{ itemBreakfast.price }}
           </button>
         </div>
-        <div *ngFor="let itemSide of Side">
+        <div *ngFor="let itemSide of Side" class="productMenu">
           <img src="{{ itemSide.image }}" class="img" />
-          <button class="card">
+          <button class="card" (click)="teste(itemSide)">
             {{ itemSide.name }} R$ {{ itemSide.price }}
           </button>
         </div>
@@ -35,9 +34,9 @@
         <ng-template mat-tab-label>
           <mat-icon class="material-icons">wine_bar</mat-icon>
         </ng-template>
-        <div *ngFor="let itemDrink of Drinks">
+        <div *ngFor="let itemDrink of Drinks" class="productMenu">
           <img src="{{ itemDrink.image }}" class="img" />
-          <button class="card">
+          <button class="card" (click)="teste(itemDrink)">
             {{ itemDrink.name }} R$ {{ itemDrink.price }}
           </button>
         </div>
