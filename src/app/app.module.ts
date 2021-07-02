@@ -12,6 +12,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatListModule} from '@angular/material/list';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
@@ -21,7 +23,7 @@ import { HallComponent } from './views/hall/hall.component';
 import { Error404Component } from './views/error404/error404.component';
 import { ProductsComponent } from './views/hall/components/products/products.component';
 import { OrderComponent } from './views/hall/components/order/order.component';
-
+import {ServiceApiService} from '../app/service/serviceApi.service';
 
 
 
@@ -50,10 +52,12 @@ import { OrderComponent } from './views/hall/components/order/order.component';
     MatToolbarModule,
     MatRadioModule,
     MatListModule, 
+    FormsModule,
+    ReactiveFormsModule,
     MatProgressSpinnerModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ServiceApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

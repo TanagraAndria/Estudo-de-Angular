@@ -9,6 +9,9 @@
     overflow: auto;
 }
 
+.mat-list-item{
+  height: 30px;
+}
 .orderForm {
     display: flex;
     flex-direction: column;
@@ -55,3 +58,5 @@
   .card:hover{
     background-color: #FFC300;;
   }
+
+ 

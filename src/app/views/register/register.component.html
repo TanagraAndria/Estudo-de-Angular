@@ -2,7 +2,8 @@
   <header>
     <img class="logo" src="{{ imageSrc }}" alt="{{ imageAlt }}" />
   </header>
-  <form class="form">
+
+  <form class="form" method="POST">
     <mat-radio-group class="btnRadio" aria-label="Select an option">
       <mat-radio-button value="1">Salão</mat-radio-button>
       <mat-radio-button value="2">Cozinha</mat-radio-button>
@@ -12,24 +13,26 @@
       class="inputForm"
       id="name"
       placeholder="Digite seu nome"
-      value="name"
+      required
     />
     <input
       type="text"
       class="inputForm"
       id="email"
       placeholder="email@email.com"
-      value="email"
+      required
     />
     <input
       type="password"
       class="inputForm"
       id="password"
       placeholder="Crie uma senha"
-      value="{password}"
+      required
     />
   </form>
-  <button mat-raised-button class="btnForm" type="submit" routerLink="/hall">
+  <button mat-raised-button (click)="criar()" class="btnForm" type="submit">
     Cadastrar
   </button>
 </div>
+
+<!-- routerLink="/hall" -->
