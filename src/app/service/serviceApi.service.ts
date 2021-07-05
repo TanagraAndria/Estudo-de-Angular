@@ -16,7 +16,7 @@ export class ServiceApiService {
   private registerUrl = 'api/users';
   private orderUrl= 'api/order';
   private newOrderUrl='api/orders';
-  
+
   constructor( private http: HttpClient) {
     this.orderSubject = new BehaviorSubject <Order>({} as Order);
     this.order = this.orderSubject.asObservable();
@@ -47,33 +47,3 @@ export class ServiceApiService {
   }
 }
 
-// newUser(){
-//   var user ={name: "",
-//     email: "",
-//     password: "",
-//     role: "",
-//     restaurant: "johny´s burger",}
-// }
-
-// postUsers(){
-//   return this.http.post<Register>(this.registerUrl)
-// }
-
-
- // criar(user: any) {
-  //   return this.http.post(this.userUrl, user);
-  // }
-
-  // postJSON() {
-  //   var json = JSON.stringify({
-  //     name: "",
-  //     email: "",
-  //     password: "",
-  //     role: "",
-  //     restaurant: "johny´s burger",
-  //   });
-  //   var params = 'json=' + json;
-  //   var cabe = new Headers();
-  //   cabe.append('Content-Type', 'application/x-www-form-urlencoded');
-  //   return this.http.post(this.userUrl,params)
-  // }
