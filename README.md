@@ -1,3 +1,3 @@
 # Estudo-de-Angular
 
-![alt text](img.jpg)
+![alt text](src/img.jpg)
