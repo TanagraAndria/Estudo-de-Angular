@@ -3,6 +3,7 @@
     background-color: white;
     height: 60vh;
     overflow: auto;
+    width: 40vw;;
 }
 
 .mat-tab-body-content {
@@ -12,7 +13,7 @@
 
 
 .img{
-    width: 10%;
+    width: 15%;
 }
 
 .card{

@@ -24,6 +24,7 @@ import { Error404Component } from './views/error404/error404.component';
 import { ProductsComponent } from './views/hall/components/products/products.component';
 import { OrderComponent } from './views/hall/components/order/order.component';
 import {ServiceApiService} from '../app/service/serviceApi.service';
+import { KitchenComponent } from './views/kitchen/kitchen.component';
 
 
 
@@ -37,6 +38,7 @@ import {ServiceApiService} from '../app/service/serviceApi.service';
     HallComponent,
     Error404Component,
     ProductsComponent,
+    KitchenComponent,
   ],
   imports: [
     HttpClientModule,

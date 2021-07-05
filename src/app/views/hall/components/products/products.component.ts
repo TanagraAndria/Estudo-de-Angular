@@ -53,8 +53,6 @@ export class ProductsComponent implements OnInit {
     }
     updated.itensOrder.push(Products);
     this.productApi.setOrder(updated);
-    console.log("teste")
-    console.log(this.productApi.getOrder())
   }
   
 

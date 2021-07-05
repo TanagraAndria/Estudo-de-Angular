@@ -1,5 +1,5 @@
 <div class="order">
-  <form class="orderForm">
+  <form class="orderForm" [formGroup]="orderForm">
     <mat-label class="title">PEDIDOS</mat-label>
     <table class="example-full-width" cellspacing="0">
       <tr>
@@ -28,7 +28,12 @@
       <mat-list-item> Valor total: R${{ getValor() }} </mat-list-item>
     </mat-list>
 
-    <button mat-raised-button class="btnForm" type="submit">
+    <button
+      mat-raised-button
+      class="btnForm"
+      type="submit"
+      (click)="createOrder()"
+    >
       Enviar para a Cozinha
     </button>
   </form>

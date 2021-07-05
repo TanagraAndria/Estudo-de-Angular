@@ -14,7 +14,9 @@ export class ServiceApiService {
   public order: Observable <any>;
   private productsUrl ='api/products';
   private registerUrl = 'api/users';
-
+  private orderUrl= 'api/order';
+  private newOrderUrl='api/orders';
+  
   constructor( private http: HttpClient) {
     this.orderSubject = new BehaviorSubject <Order>({} as Order);
     this.order = this.orderSubject.asObservable();
@@ -22,6 +24,10 @@ export class ServiceApiService {
 
   getProducts() : Observable<Products[]>{
     return this.http.get<[Products]>(this.productsUrl);
+  }
+
+  getNewOrder(): Observable<any>{
+    return this.http.get(this.newOrderUrl);
   }
 
   getOrder() {
@@ -36,6 +42,9 @@ export class ServiceApiService {
     return this.http.post<any>(this.registerUrl, register)
   }
  
+  public postOrder(order: any): Observable<Order>{
+    return this.http.post<any>(this.orderUrl, order)
+  }
 }
 
 // newUser(){

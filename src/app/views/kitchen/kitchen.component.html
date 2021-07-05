@@ -2,7 +2,7 @@
   <p>
     <mat-toolbar color="primary">
       <button mat-icon-button class="example-icon" aria-label="menu icon">
-        <mat-icon routerLink="/kitchen">menu</mat-icon>
+        <mat-icon routerLink="/hall">menu</mat-icon>
       </button>
       <span class="example-spacer"></span>
       <button
@@ -18,9 +18,8 @@
 <header>
   <img class="logo" src="{{ imageSrc }}" alt="{{ imageAlt }}" />
 </header>
-<mat-label label="Api + Observable">
-  <div class="apps">
-    <app-products></app-products>
-    <app-order></app-order>
-  </div>
-</mat-label>
+<div>
+  <mat-card *ngFor="let item of Itens">
+    {{ item.itensOrder }} {{ item.products }} {{ item.client }}
+  </mat-card>
+</div>

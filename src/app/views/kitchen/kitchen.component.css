@@ -1,0 +1,21 @@
+.mat-toolbar.mat-primary {
+    height: 34px;
+  }   
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .apps{
+    display: flex;
+    justify-content: space-around;
+  }
+header{
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo{
+      width: 15vw;
+      margin-top: -19px;
+  }
+  

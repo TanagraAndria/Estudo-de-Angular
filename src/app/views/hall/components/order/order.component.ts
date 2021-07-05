@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Products} from '../products/product';
 import {Order} from './order';
 import {ServiceApiService} from '../../../../service/serviceApi.service';
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -10,17 +11,27 @@ import {ServiceApiService} from '../../../../service/serviceApi.service';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
-
+  public orderForm!: FormGroup;
   order: Order ={} as Order;
   valorTotal: number = 0;
+  
+  
 
-  constructor( private productApi: ServiceApiService) {
+  constructor( 
+    private productApi: ServiceApiService,
+    private fb: FormBuilder) {
     this.productApi.order.subscribe((data) => {
       this.order = data;
     })
    }
 
   ngOnInit(): void {
+    this.orderForm = this.fb.group({
+      user_id: ["14"],
+      table: ["", [Validators.required]],
+      client: ["", [Validators.required]],
+      comments: [""],
+      products: [""] })
   }
   getValor(){
     this.valorTotal =0;
@@ -30,6 +41,12 @@ export class OrderComponent implements OnInit {
       });
     }
     return this.valorTotal;
+  }
+
+  createOrder(){
+    this.productApi.postOrder(this.orderForm.value).subscribe(result =>{});
+    this.orderForm.reset();
+    console.log ("Pedido criado")
   }
 
 }
